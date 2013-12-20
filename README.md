@@ -1,4 +1,4 @@
-rsyslog-docs (v7-stable)
+rsyslog-docs (v7-devel)
 ========================
 
 Documentation for the rsyslog project
