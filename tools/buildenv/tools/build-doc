@@ -15,7 +15,7 @@ else
 fi
 cd /rsyslog-doc
 if [ -e SPHINX_EXTRA_OPTS ]; then
-	export SPHINX_EXTRA_OPTS="$SPHINX_EXTRA_OPTS `cat SPHINX_EXTRA_OPTS`"
+	export SPHINX_EXTRA_OPTS="-D html_theme=sphinx_rtd_theme $SPHINX_EXTRA_OPTS `cat SPHINX_EXTRA_OPTS`"
 fi
 eval sphinx-build $STRICT -b $FORMAT $SPHINX_EXTRA_OPTS source $OUTPUT
 RESULT=$?
